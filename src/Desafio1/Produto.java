@@ -37,6 +37,7 @@ public class Produto {
         }
     }
 
+
     public void exibirResumo() {
         System.out.println("Produto: " + this.nome);
         System.out.println("Preço: R$ " + this.preco);
