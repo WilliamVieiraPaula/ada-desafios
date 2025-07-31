@@ -50,7 +50,7 @@ public class Reembolso {
     }
 
     public void imprimirResumoReembolso(double valorTotal){
-        NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.getDefault());
+        NumberFormat nf = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
         System.out.println(new StringBuilder().append("Funcionário: ").append(nomeFuncionario).append(" – Dias Trabalhados: ").append(diasTrabalhados).append(" – Reembolso Total: ").append(nf.format(valorTotal)));
     }
 }
