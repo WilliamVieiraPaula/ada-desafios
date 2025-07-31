@@ -9,7 +9,6 @@ Este repositório contém os **desafios desenvolvidos na disciplina de Programa�
 - Praticar os conceitos fundamentais da POO;
 - Aplicar técnicas modernas de desenvolvimento Java;
 - Consolidar o conhecimento adquirido durante o programa;
-- Manter o histórico de aprendizado e evolução técnica.
 
 ## 🧠 Conteúdos Abordados
 
