@@ -18,7 +18,6 @@ Este repositório contém os **desafios desenvolvidos na disciplina de Programa�
 - Herança
 - Polimorfismo
 - Abstração
-- Interfaces
 - Composição e Agregação
 
 
