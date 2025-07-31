@@ -7,6 +7,9 @@ Criar métodos com retorno, parâmetros, múltiplas assinaturas (sobrecarga) e u
 
 package Desafio2;
 
+import java.text.NumberFormat;
+import java.util.Locale;
+
 public class Reembolso {
    private String nomeFuncionario;
    private int diasTrabalhados;
@@ -29,24 +32,25 @@ public class Reembolso {
     }
 
     public double calcularReembolso(double alimentacao, double transporte, double hospedagem){
-       Double calcularReembolso = alimentacao + transporte + hospedagem;
+       double calcularReembolso = alimentacao + transporte + hospedagem;
         if(calcularReembolso > 0 && this.diasTrabalhados > 7){
-            Double bonus = ((calcularReembolso * 0.10) + calcularReembolso);
+            double bonus = ((calcularReembolso * 0.10) + calcularReembolso);
             return bonus;
        }
         return calcularReembolso;
     }
 
     public double calcularReembolso(double alimentacao, double transporte){
-        Double calcularReembolso = alimentacao + transporte;
+        double calcularReembolso = alimentacao + transporte;
         if(calcularReembolso > 0 && this.diasTrabalhados > 7){
-            Double bonus = ((calcularReembolso * 0.10) + calcularReembolso);
+            double bonus = ((calcularReembolso * 0.10) + calcularReembolso);
             return bonus;
         }
         return  calcularReembolso;
     }
 
     public void imprimirResumoReembolso(double valorTotal){
-       System.out.println(new StringBuilder().append("Funcionário: ").append(nomeFuncionario).append(" – Dias Trabalhados: ").append(diasTrabalhados).append(" – Reembolso Total: R$ ").append(valorTotal).toString());
+        NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.getDefault());
+        System.out.println(new StringBuilder().append("Funcionário: ").append(nomeFuncionario).append(" – Dias Trabalhados: ").append(diasTrabalhados).append(" – Reembolso Total: ").append(nf.format(valorTotal)));
     }
 }
