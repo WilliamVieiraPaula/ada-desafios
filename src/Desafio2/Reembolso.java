@@ -47,6 +47,7 @@ public class Reembolso {
             return bonus;
         }
         return  calcularReembolso;
+
     }
 
     public void imprimirResumoReembolso(double valorTotal){

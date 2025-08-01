@@ -25,4 +25,5 @@ public abstract class Usuario {
     protected void setSenha(String novaSenha) {
         this.senha = novaSenha;
     }
+
 }

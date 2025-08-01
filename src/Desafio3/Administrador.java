@@ -14,5 +14,6 @@ public class Administrador extends Usuario {
     public void redefinirSenha(String novaSenha) {
         setSenha(novaSenha);
     }
+
 }
 
