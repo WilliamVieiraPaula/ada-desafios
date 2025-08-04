@@ -6,7 +6,6 @@ public class SistemaBancario {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Criando a conta principal
         System.out.print("Digite o nome do titular: ");
         String titular = scanner.nextLine();
         System.out.print("Digite o número da conta: ");
@@ -14,7 +13,6 @@ public class SistemaBancario {
 
         Conta minhaConta = new Conta(titular, numero, 0.0);
 
-        // Conta para simular transferência
         Conta contaDestino = new Conta("Conta Destino", 999, 0.0);
 
         int opcao;
